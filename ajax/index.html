@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>AJAX Example</title>
+	<script src="javascript.js"></script>
+	<script>
+		$(document).on('click', '#login', function (e) {
+		alert("Hi");
+        $.ajax({
+            async: false,
+            type: "POST",
+            url: "login.php",
+			data: $("#loginform").serialize();
+            success: function (msg) {
+                document.getElementById('user').innerHTML = "Wel Come : " + msg;
+            },
+            error: function (ts) {
+                $("#error").html(ts.responseText);
+            }
+        });
+    });
+	</script>
+</head>
+<body>
+	<div id="user"></div>
+	<form id="loginform">
+		<input name="id">
+		<input type="password" name="password">
+		<input type="button" name="submit" id="login" value="Login">
+	</form>
+</body>
+</html>

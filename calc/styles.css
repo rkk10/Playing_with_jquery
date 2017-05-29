@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section {
+	width: 98.7vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+/*	background: #c5c5c5;*/
+	width: 350px;
+	height: 400px;
+	padding: 5px;
+	box-shadow: -1px 3px 16px -1px rgba(0, 0, 0, 0.3);
+}
+
+.head {
+	height: 30%;
+	flex: 1;
+	background: whitesmoke;
+}
+
+.sec {
+	height: 70%;
+	flex: 1;
+	background: #dadada;
+	display: flex;
+}
+
+.box_1 {
+	width: 75%;
+	height: 96%;
+	background: #545454;
+	margin: 2px;
+}
+
+.box {
+	width: 25%;
+	height: 96%;
+	background: #545454;
+	margin: 2px;
+}
+
+input#ip {
+	width: 95%;
+	height: 15%;
+	margin: 5px;
+}
+
+button {
+	height: 16%;
+	width: 96%;
+}
+
+.right_btn {
+	height: 40px;
+	width: 37px;
+	background: black;
+	margin: 2px;
+	float: left;
+}
+
+.btn_box {
+	height: 48px;
+	width: 75px;
+	background: black;
+	float: left;
+	margin: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btns {
+	flex: 1;
+	color: white;
+	height: 85%;
+}
+
+.right_btn {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.head {
+	height: 30%;
+	flex: 1;
+	background: whitesmoke;
+}
+
+.output {
+	height: 70%;
+	flex: 1;
+	background: #c8dae2;
+}
+
+.reasult {
+	height: 70%;
+	background: #4e4e4e;
+	color: white;
+}

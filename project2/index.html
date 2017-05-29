@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>Webpage</title>
+		<style>
+			*{
+				margin: 0px;
+				box-sizing: border-box;
+			}
+			header{
+				height: 20vh;
+				width: 100vw;
+				display: flex;
+				justify-content: flex-end;
+				padding: 20px;
+			}
+			section{
+				height: 60vh;
+				width: 100vw;
+			}
+			footer{
+				height: 20vh;
+				with: 100vw;
+			}
+			button {
+				width: 60px;
+				height: 26px;
+				background-color: #4747b3;
+				border: none;
+				color: white;
+				border-radius: 4px;
+			}
+			ul{
+				list-style: none;
+			}
+			li{
+				display: inline;	
+				margin: 20px;
+			}
+			div#loginmodel{
+				    padding: 20px;
+    border: 1px solid gray;
+    background: #767677;
+    color: white;
+			}
+			#regmodel{
+				 padding: 20px;
+    border: 1px solid gray;
+    background: #393946;
+    color: white;
+			}
+		</style>
+		<script src="javascript.js"></script>
+		<script>
+		$(document).ready(function(){
+				$("#open_diologue").click(function(){
+					$("#loginmodel").toggle(2000,"swing");
+				});
+				$("#open_diologue1").click(function(){
+					$("#regmodel").toggle(1000,"swing");
+				});
+				$("#regform").submit(function(e){
+					e.preventdefault();
+					$.ajax({
+						url:"login.html";
+						data: $("regform").serialize();
+					}).done(function(){alert("Hi")});
+				});
+			});			
+		</script>
+		
+	</head>
+	<body>
+		<header>
+			<h2>Webpage<h2>
+			<div class = "right_menu">
+				<div  class = "drop_menu">				
+					<ul>
+						<li id="open_diologue"><a href="#">login</a></li>
+							<div id="loginmodel" style="display:none">
+								<form id="loginform">
+									<lable>User Name</lable>
+									<input type="text"></input></br>
+									<lable>Password</label>
+									<input type="password"></input></br>
+									<input type="submit" name="submit" value="submit"></input>
+									<input type="reset" name="cancel" value="cancel"></input>
+								</form>
+							</div>
+						<li id="open_diologue1"><a href="#">Register</li>
+							<div id="regmodel" style="display:none; border: 1px solide black ">
+								<form id="regform">
+									<label>Name</label> 
+									<input type="text"></input></br>
+									<label>E-mail</label>
+									<input type="email"></input></br>
+									<label>Contact</label>
+									<input type="number"></input></br> 
+									<label>Address</label>
+									<input type="text"></input></br>
+									<input type="submit" name="submit" value="submit"></input>
+									<input type="reset" name="cancel" value="cancel"></input>
+								</form>
+							</div>
+					</ul>	
+				</div>
+				
+			</div>
+		</header>
+		<footer></footer>
+	</body>
+</html>

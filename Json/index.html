@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Hi</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+	
+	$("#lng").change(function(e){
+		var j= $(this).val();
+		 $.getJSON('people.json', function(data) {
+			$.each(data.person, function(i, f) {
+				if(i==j){
+					document.title=f.lang;
+				}
+			});
+		 });
+	});
+	
+	
+	
+   $.getJSON('people.json', function(data) {
+       $.each(data.person, function(i, f) {
+		document.title=f.lang;
+          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
+           "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+		  // alert("");
+     });
+
+   });
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>City</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+   <select id="lng">
+	<option value="0">Hin</option>
+	<option value="1">EN</option>
+	<option value="2">JP</option>
+   </select>
+</div>
+</div>
+
+</body>
+</html>

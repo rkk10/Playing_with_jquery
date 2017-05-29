@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>JQ</title>
+		<script>
+			function car(clr,m,cst)
+			{
+				color=clr;
+				model=m;
+				cost=cst;
+				getInfo=function()
+				{
+					return "Color : " + color + " Model : " + model + " Cost : " +cst;
+				}
+			
+			}
+			
+			function getvalue()
+			{
+				car('Red','Ford','8000000');
+				document.getElementById("info").innerHTML=getInfo;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="info"></div>
+		<button id="GB">Click Me</button>
+	
+	</body>
+</html>
