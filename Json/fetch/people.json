@@ -1,0 +1,32 @@
+{
+	"person": [
+		{
+			"firstName": "Clark",
+			"lastName": "Kent",
+			"job": "Reporter",
+			"roll": 20,
+			"lang": "EN"
+		},
+		{
+			"firstName": "Bruce",
+			"lastName": "Wayne",
+			"job": "Playboy",
+			"roll": 30,
+			"lang": "UR"
+		},
+		{
+			"firstName": "Peter",
+			"lastName": "Parker",
+			"job": "Photographer",
+			"roll": 40,
+			"lang": "JP"
+		},
+		{
+			"firstName": "Dhanajaya",
+			"lastName": "Nanaware",
+			"job": "HTML Developer",
+			"roll": 120,
+			"lang": "HN"
+		}
+	]
+}
