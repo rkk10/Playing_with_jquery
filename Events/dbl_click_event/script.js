@@ -20,7 +20,7 @@ $(document).ready(function () {
 		$(".box").addClass("red");
 	});
 
-	// mousedown()
+	// mouseleave()
 
 	$(".box").mouseleave(function () {
 		$(this).removeClass("red");
