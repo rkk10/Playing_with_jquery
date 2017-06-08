@@ -28,6 +28,6 @@ $(document).ready(function () {
 
 	// mousedown()
 	$(".box").mousedown(function () {
-		$(this).html("Hellow");
+		$(this).css("background-color", "green");
 	});
 });
