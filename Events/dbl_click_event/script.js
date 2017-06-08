@@ -12,10 +12,15 @@ $(document).ready(function () {
 	// MouseEnter()
 
 	$(".box").mouseenter(function () {
-		if ($(".box").hasClass("red")) {
-			$(".box").removeClass("red");
-		} else {
-			$(".box").addClass("red");
-		}
+		//		if ($(".box").hasClass("red")) {
+		//			$(".box").removeClass("red");
+		//		} else {
+		//			$(".box").addClass("red");
+		//		}
+		$(".box").addClass("red");
+	});
+
+	$(".box").mouseleave(function () {
+		$(this).removeClass("red");
 	});
 });
