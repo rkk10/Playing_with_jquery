@@ -1,8 +1,21 @@
+// Double click
+
 $(document).ready(function () {
 	$(".box").dblclick(function () {
-		$(this).animate({
-			height: "300px",
-			width: "300px"
-		})
+		if ($(".box").hasClass("add")) {
+			$(this).removeClass("add");
+		} else {
+			$(this).addClass("add");
+		}
+	});
+
+	// MouseEnter()
+
+	$(".box").mouseenter(function () {
+		if ($(".box").hasClass("red")) {
+			$(".box").removeClass("red");
+		} else {
+			$(".box").addClass("red");
+		}
 	});
 });

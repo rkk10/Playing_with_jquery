@@ -22,3 +22,12 @@ section {
 	margin: 10px;
 	border-radius: 50%;
 }
+
+.add {
+	height: 300px;
+	width: 300px;
+}
+
+.red {
+	background-color: red;
+}
