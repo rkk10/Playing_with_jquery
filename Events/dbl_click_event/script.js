@@ -20,7 +20,14 @@ $(document).ready(function () {
 		$(".box").addClass("red");
 	});
 
+	// mousedown()
+
 	$(".box").mouseleave(function () {
 		$(this).removeClass("red");
+	});
+
+	// mousedown()
+	$(".box").mousedown(function () {
+		$(this).html("Hellow");
 	});
 });
