@@ -1,0 +1,32 @@
+section {
+	height: 95vh;
+	width: 98vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	padding: 30px 25px;
+	background: rgba(128, 128, 128, 0.3);
+}
+
+input {
+	width: 225px;
+	margin: 10px 0px;
+	height: 25px;
+}
+
+button {
+	height: 30px;
+	width: 65px;
+	background-color: #3535ff;
+	border: none;
+	box-shadow: -2px 2px 0px 0px rgba(0, 0, 0, 0.3);
+	color: white;
+}
+
+p {
+	display: none;
+	color: red;
+}
